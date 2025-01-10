@@ -185,9 +185,9 @@ if (!empty($_SESSION['cart'])) {
                         <?php foreach ($_SESSION['cart'] as $item): ?>
                             <div class="card mb-3">
                                 <div class="card-body d-flex align-items-center">
-                                    <img src="<?= htmlspecialchars($item['image']) ?>" 
-                                         alt="<?= htmlspecialchars($item['name']) ?>" 
-                                         class="cart-item-image">
+                                <img src="<?= htmlspecialchars($item['image']) ?>" 
+                                        alt="<?= htmlspecialchars($item['name']) ?>" 
+                                        class="cart-item-image">
                                     
                                     <div class="ms-3 flex-grow-1">
                                         <h5><?= htmlspecialchars($item['name']) ?></h5>
